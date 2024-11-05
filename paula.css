@@ -1,0 +1,288 @@
+
+header {
+    background-color: #000000; /* rosado */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+    background-color: #ffffff; /* rosado */
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+nav ul li {
+    position:relative;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 19px;
+    display: block;
+    padding: 0px;
+}
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fdb4bf;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li ul li a {
+    padding: 10px;
+}
+nav ul li:hover ul {
+    display: block;
+}
+main {
+    padding: 20px;
+}
+section {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8x;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #fdb4bf; /* rosado */
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 10px;
+}
+.small-img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    margin-bottom: 10px;
+}
+ul li {
+    margin-bottom: 10px;
+}
+
+
+ody{
+margin:0;
+
+}
+
+
+* {
+margin:0px;
+padding:0px;
+}
+
+#header {
+margin:auto;
+width:500px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+list-style:none;
+}
+
+.nav > li {
+float:left;
+}
+
+.nav li a {
+background-color:#b8b6c2;;
+color:#fff;
+text-decoration:none;
+padding:10px 12px;
+display:block;
+}
+
+.nav li a:hover {
+background-color:#f0f0f0;
+}
+
+.nav li ul {
+display:none;
+position:absolute;
+min-width:140px;
+}
+
+.nav li:hover > ul {
+display:block;
+}
+
+.nav li ul li {
+position:relative;
+}
+
+.nav li ul li ul {
+right:-140px;
+top:0px;
+}
+
+.card {
+    perspective: 1000px;/* Evita que al girar la imagen no sobresalga */
+}
+
+.card-inner {
+    position: right;
+    width: 500px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+    top:10; left: 1200px; 
+}
+
+
+
+
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    top: 40px; right: 10px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /*determina si la cara posterior de un elemento es visible de frente al usuario.*/
+    border-radius: 8px;
+    overflow: hidden; /* Evita que las imágenes sobresalgan del contenedor */
+}
+
+.card-front {
+    background: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.card-back {
+    background: #333;
+    color: #ffffff;
+    border: 1px solid #ccc;
+    transform: rotateY(180deg);
+}
+
+.card-front img, .card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+
+/* Estilos CSS para el footer */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* Estilos para los botones de redes sociales */
+.social-icons {
+margin-bottom: 20px;
+}
+
+.social-icons a {
+margin: 0 10px;
+text-decoration: none;
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+color: #fff;
+text-decoration: none;
+}
+
+/* Estilos para los enlaces en el hover */
+footer a:hover {
+text-decoration: underline;
+}
+
+
+
+
+/* Estilos CSS para los botones de menú */
+.menu {
+    display: flex;
+}
+
+.menu-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.menu-button:last-child {
+    margin-right: 0;
+}
+
+/* Estilos CSS para las imágenes */
+.image-container {
+    text-align: center;
+}
+
+.image {
+    display: none;
+}
+
+.image.active {
+    display: block;
+}
+
+.enc  {
+    background-color: #ffffff; 
+
+    padding:20px; 
+    width: 200px;
+    height: 10px; 
+    margin: 100px;
+    position: absolute; 
+    top: 150px; left: 100px; 
+    font-family: Arial;
+    font-size: 20px;
+}
+.audio  {
+    background-color: #ffffff; 
+
+    padding:20px; 
+    width: 200px;
+    height: 10px; 
+    margin: 100px;
+    position: absolute; 
+    top: 300px; left: 100px; 
+    font-family: Arial;
+    font-size: 20px;
+}
+
+
+

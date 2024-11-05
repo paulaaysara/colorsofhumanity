@@ -1,0 +1,316 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+#header {
+    margin:auto;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color:#3125d8;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.nav li a:hover {
+    background-color:#434343;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+.titulo {
+        color: rgb(0, 0, 0);
+        height: 200px;
+        width: 500px;
+        margin: 0px;
+        padding: 10px;
+        text-align: left;
+        font-size:20px;
+        font-family: 'Times New Roman', Times, serif;
+        position: absolute;
+        top: 90px;
+        left: 650px;
+    }
+    section {
+        background-color: #f1f1f1;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 8xp;
+        margin-top: auto;   
+       
+        
+       
+    }
+    h2 {
+        color: #eb475f; /* rosado */
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+    .small-img {
+        width: 50%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ul {
+        margin-bottom: 10px;
+    }
+    ul li {
+        margin-bottom: 10px;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu-button {
+        background-color: #8c4966;
+        color: #ffffff;
+        padding: 30px 30px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+    }
+    
+    .menu-button:nth-child(1) {
+        margin-right: 10px 0;
+        position: absolute;
+        top: 700px;
+        left: 120px;
+        text-align: center;
+    }
+    
+    .menu-button:nth-child(2) {
+        margin-right: 10px 0;
+        position: absolute;
+        top: 800px;
+        left: 120px;
+        text-align: center;
+    }
+    
+    .menu-button:nth-child(3) {
+        margin-right: 10px;
+        position: absolute;
+        top: 600px;
+        left: 120px;
+        text-align: center;
+    }
+    
+    /* Estilos CSS para las imágenes */
+    .image-container {
+        text-align: center;
+    }
+    
+    .image {
+        display: none;
+    }
+    
+    .image.active {
+        display: block;
+    }
+    .linea1 {
+
+        background: #242124;
+        padding: 2px;
+        width: 1550px;
+        height: 5px;
+        margin: 40 auto;
+        position: absolute;
+        top: 250px;
+        left: 300px;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .banner-container {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .banner-slide {
+        display: flex;
+        animation: slide 25s infinite;
+    }
+    
+    .banner-slide .slide {
+        flex: 0 0 100%;
+    }
+    
+    .banner-slide .slide img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* Estilo para los botones de control */
+    .slide-controls {
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .slide-controls label {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #777;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    
+    /* Estilo para los botones de control seleccionados */
+    input[type="radio"]:checked + .slide-controls label {
+        background-color: #f44336;
+    }
+    
+    /* Estilo para ocultar los botones de radio */
+    input[type="radio"] {
+        position: absolute;
+        left: -9999px;
+    }
+    
+    /* Animación del banner */
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-200%);
+        }
+        75% {
+            transform: translateX(-300%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+      
+      
+    }
+    .audio  {
+        background-color: #ffffff; 
+    
+        padding:0px; 
+        width: 200px;
+        height: 10px; 
+        margin: 100px;
+        position: absolute; 
+        top: 300px; left: 100px; 
+        font-family: Arial;
+        font-size: 20px;
+    }
+    .audio2  {
+        background-color: #ffffff; 
+    
+        padding:0px; 
+        width: 200px;
+        height: 10px; 
+        margin: 100px;
+        position: absolute; 
+        top: 380px; left: 100px; 
+        font-family: Arial;
+        font-size: 20px;
+    }
+    .audio3  {
+        background-color: #ffffff; 
+    
+        padding:0px; 
+        width: 200px;
+        height: 10px; 
+        margin: 100px;
+        position: absolute; 
+        top: 450px; left: 100px; 
+        font-family: Arial;
+        font-size: 20px;
+    }
+    .audio4  {
+        background-color: #ffffff; 
+    
+        padding:0px; 
+        width: 200px;
+        height: 10px; 
+        margin: 100px;
+        position: absolute; 
+        top: 550px; left: 100px; 
+        font-family: Arial;
+        font-size: 20px;
+    }
+    
+.language-selector {
+    margin-bottom: 20px;
+    
+}
+
+.language-button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.language-button:hover {
+    background-color: #0056b3;
+}
+
+.language-content {
+    display: none;
+}
+
+#spanish:target,
+#english:target {
+    display: block;
+}
+
+    .language{
+        position: absolute;
+        top: 450px;
+    }
+    
+    
+    
+   
+    
+    

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>COLORS OF HUMANITY</title>
+    <link rel="stylesheet" href="./style.css">
+    <Body Bgcolor="pink">
+        <img src="./logo.png" width="400" height="400">
+        <div class="linea1">
+        </div>
+   
+</head>
+<body>
+    <div class="titulo">
+        <center> <h1> COLORS OF HUMANITY </h1> </center>
+      </div>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="./index.html">Inicio</a></li>
+				<li><a href="">Quienes somos</a>
+					<ul>
+						<li><a href="./plan.html">Plan estrategico</a></li>
+						<li><a href="">Proyecto</a>
+							<ul>
+								<li><a href="./evidencias.css">Formulario</a></li>
+								<li><a href="./marco legal.pdf">Marco legal</a></li>
+								<li><a href="./marco teorico.pdf">Marco teorico</a></li>
+								<li><a href="">Cronograma</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Evidencias</a>
+					<ul>
+						<li><a href="./fotos.html">Fotos</a></li>
+						<li><a href="">Videos</a></li>
+						<li><a href="https://docs.google.com/forms/d/1LXziylxFyidDOVuKbWDCeJtslUfmVH54Y02FvSV_MOk/edit?pli=1#responses">surveys</a></li>
+						<li><a href="./Infografia  Colorido.jpg">Infografia</a></li>
+                        <li><a href="">Podcast</a></li>
+					</ul>
+				</li>
+				<li><a href="">technological s</a></li>
+			</ul>
+		</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="menu">
+            <button class="menu-button" onclick="showImage('image1')">Vision</button>
+            
+            <button class="menu-button" onclick="showImage('image2')">V. Corporativos</button>
+            
+            <button class="menu-button" onclick="showImage('image3')">Mision</button>
+        </div>
+    
+        <div class="image-container">
+            <br>
+            <br>
+            <br>
+            <br>
+           <center> <img id="image1" class="image" src="./vision.jpeg"  width="650" height="650"></center>
+            <center><img id="image2" class="image" src="./valores.jpeg"  width="650" height="650"></center>
+          <center> <img id="image3" class="image" src="./mision.jpeg"  width="650" height="650"></center>
+        </div>
+    
+        <script>
+            function showImage(imageId) {
+                // Ocultar todas las imágenes
+                const images = document.querySelectorAll('.image');
+                images.forEach(image => image.classList.remove('active'));
+    
+                // Mostrar la imagen seleccionada
+                const selectedImage = document.getElementById(imageId);
+                selectedImage.classList.add('active');
+            }
+        </script>
+</body>
+</html>
